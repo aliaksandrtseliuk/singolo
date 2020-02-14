@@ -1,1 +1,1 @@
-# Учебный проект Singolo от Rolling Scope School
+# Учебный проект Singolo от Rolling Scope School !!!
