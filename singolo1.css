@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+    width: 1200px;
+	margin: 0 auto;
+
+	font-size: 1.8rem;
+	font-family: 'Lato', Arial, sans-serif;
+	color: #767e9e;
+}
