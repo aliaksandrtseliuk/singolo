@@ -10,20 +10,31 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <span class="header__logo">Singolo<sup class="header__logo--decoration">*</sup></span>
+            <a href="#" class="header__logo"><span>Singolo<sup class="header__logo--decoration">*</sup></span></a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__item current-link">Home</li>
-                    <li class="navigation__item">Services</li>
-                    <li class="navigation__item">Portfolio</li>
-                    <li class="navigation__item">About</li>
-                    <li class="navigation__item">Contact</li>
+                    <li class="navigation__item current-link"><a href="#">Home</a></li>
+                    <li class="navigation__item"><a href="#">Services</a></li>
+                    <li class="navigation__item"><a href="#">Portfolio</a></li>
+                    <li class="navigation__item"><a href="#">About</a></li>
+                    <li class="navigation__item"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <section class="slider">
+            <div class="slider__images">
+                <img src="./assets/img/slider-phone.png" alt="phone-vertical" class="slider__image slider__image--phone-vertical">
+                <img src="./assets/img/slider-phone.png" alt="phone-horizontal"  class="slider__image slider__image--phone-horizontal">
+                <img src="./assets/img/phone-image-vertical.png" alt="phone-image-vertical" class="slider__phone-background slider__phone-background--vertical">
+                <img src="./assets/img/phone-image-horizontal.png" alt="phone-image-horizontal" class="slider__phone-background slider__phone-background--horizontal">
+            </div>
+            <button class="slider__buttton slider__button--left"></button>
+            <button class="slider__buttton slider__button--right"></button>
+        </section>
+
         <section class="services">
             <div class="wrapper">
                 <h1 class="services__title">Our Services</h1>
