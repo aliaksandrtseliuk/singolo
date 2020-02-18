@@ -15,11 +15,6 @@ body {
 	color: #767e9e;
 }
 
-/*h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
-}*/
-
 a {
 	text-decoration: none;
 }
@@ -27,6 +22,8 @@ a {
 li {
 	list-style: none;
 }
+
+/*----------HEADER----------*/
 
 .header {
 	min-height: 89px;
@@ -51,6 +48,7 @@ li {
 }
 
 .header__logo {
+	position: relative;
 	font-size: 2.5rem;
 	font-family: 'Lato';
 	font-weight: bold;
@@ -58,7 +56,11 @@ li {
 	text-transform: uppercase;
 }
 
-.header__logo-star {
+.header__logo::before {
+	content: '*';
+	position: absolute;
+	top: 0;
+	right: -10px;
 	color: #f06c64;
 }
 
@@ -94,4 +96,71 @@ li {
 
 .navigation__link--current {
 	color: #f06c64;
+}
+
+
+
+/*----------SLIDER----------*/
+
+.slider {
+	min-height: 600px;
+	background-color: #f06c64;
+}
+
+.slider .wrapper {
+	position: relative;
+}
+
+.slider__images {
+	position: relative;
+	min-height: inherit;
+}
+
+.slider__image {
+	position: absolute;
+}
+
+.slider__image--phone-vertical {
+	top: 53px;
+	left: 72px;
+}
+
+.slider__image--phone-horizontal {
+	top: 175px;
+	right: 72px;
+}
+
+.slider__phone-background {
+	z-index: 10;
+}
+
+.slider__phone-background--vertical {
+	top: 118px;
+	left: 86px;
+	
+}
+
+.slider__phone-background--horizontal {
+	top: 188px;
+	right: 162px;
+}
+
+.slider__button {
+	position: absolute;
+	top: 280px;
+	width: 16px;
+	height: 27px;
+	background: url('./assets/img/slider-arrow.png') no-repeat;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.slider__button--left {
+	left: 2px;
+}
+
+.slider__button--right {
+	right: 0;
+	transform: rotate(-180deg);
 }
