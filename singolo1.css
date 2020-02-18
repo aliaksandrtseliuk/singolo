@@ -50,7 +50,6 @@ li {
 .header__logo {
 	position: relative;
 	font-size: 2.5rem;
-	font-family: 'Lato';
 	font-weight: bold;
 	color: #fff;
 	text-transform: uppercase;
@@ -163,4 +162,92 @@ li {
 .slider__button--right {
 	right: 0;
 	transform: rotate(-180deg);
+}
+
+/*----------SERVICES----------*/
+
+.services {
+	min-height: 494px;
+	background-color: #f2f2f2;
+}
+
+.services__title {
+	margin-top: 65px;
+	display: inline-block;
+	font-size: 3rem;
+	line-height: 3rem;
+	font-weight: 900;
+	color: #666d89;
+}
+
+.services__text {
+	margin-top: 33px;
+	line-height: 3rem;
+	font-weight: 300;
+	letter-spacing: -.03px;
+}
+
+.layout-3-columns {
+	margin-top: 45px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.service:nth-child(n+4) {
+	margin-top: 34px;
+}
+
+.service__wrapper {
+	width: 220px;
+}
+
+.service__title {
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	font-weight: 900;
+	color: #666d89;
+}
+
+.service__text {
+	margin-top: 13px;
+	font-size: 1.2rem;
+	line-height: 2.156rem;
+	font-weight: 400;
+}
+
+.icon-square {
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+
+.icon-square--pensil {
+	background: url('./assets/img/services-item-1.svg') no-repeat;
+}
+
+.icon-square--lamp {
+	background: url('./assets/img/services-item-2.svg') no-repeat;
+}
+
+.icon-square--heart {
+	background: url('./assets/img/services-item-3.svg') no-repeat;
+}
+
+.icon-square--device {
+	background: url('./assets/img/services-item-4.svg') no-repeat;
+}
+
+.icon-square--idea {
+	background: url('./assets/img/services-item-5.svg') no-repeat;
+}
+
+.icon-square--star {
+	background: url('./assets/img/services-item-6.svg') no-repeat;
 }
