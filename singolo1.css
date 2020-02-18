@@ -251,3 +251,10 @@ li {
 .icon-square--star {
 	background: url('./assets/img/services-item-6.svg') no-repeat;
 }
+
+/*----------FOOTER----------*/
+
+.footer {
+	min-height: 6px;
+	background-color: #fff;
+}
