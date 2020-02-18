@@ -1,5 +1,6 @@
 * {
-    margin: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -26,13 +27,10 @@ li {
 /*----------HEADER----------*/
 
 .header {
+	position: relative;
 	min-height: 89px;
 	background-color: #2d303a;
-}
-
-.header__bottom {
-	min-height: 6px;
-	background-color: #323746;
+	box-shadow: 0px 6px 0px #323746;
 }
 
 .wrapper {
@@ -64,11 +62,12 @@ li {
 }
 
 .navigation {
+	margin-top: 6px;
 	display: flex;
 }
 
 .navigation__item {
-	margin-left: 30px;
+	margin-left: 28px;
 	line-height: 0;
 }
 
@@ -93,16 +92,19 @@ li {
 	text-transform: uppercase;
 }
 
+.navigation__link:hover {
+	color: #f06c64;
+}
+
 .navigation__link--current {
 	color: #f06c64;
 }
 
 
-
 /*----------SLIDER----------*/
 
 .slider {
-	min-height: 600px;
+	min-height: 606px;
 	background-color: #f06c64;
 }
 
@@ -120,12 +122,12 @@ li {
 }
 
 .slider__image--phone-vertical {
-	top: 53px;
+	top: 59px;
 	left: 72px;
 }
 
 .slider__image--phone-horizontal {
-	top: 175px;
+	top: 181px;
 	right: 72px;
 }
 
@@ -134,19 +136,19 @@ li {
 }
 
 .slider__phone-background--vertical {
-	top: 118px;
+	top: 124px;
 	left: 86px;
 	
 }
 
 .slider__phone-background--horizontal {
-	top: 188px;
+	top: 194px;
 	right: 162px;
 }
 
 .slider__button {
 	position: absolute;
-	top: 280px;
+	top: 286px;
 	width: 16px;
 	height: 27px;
 	background: url('./assets/img/slider-arrow.png') no-repeat;
@@ -167,12 +169,14 @@ li {
 /*-----------SERVICES-----------*/
 
 .services {
+	margin-bottom: 6px;
 	min-height: 494px;
 	background-color: #f2f2f2;
+	box-shadow: 0px 6px 0px #fff;
 }
 
 .services__title {
-	margin-top: 65px;
+	margin-top: 62px;
 	display: inline-block;
 	font-size: 3rem;
 	line-height: 3rem;
@@ -181,14 +185,14 @@ li {
 }
 
 .services__text {
-	margin-top: 33px;
+	margin-top: 20px;
 	line-height: 3rem;
 	font-weight: 300;
 	letter-spacing: -.03px;
 }
 
 .layout-3-columns {
-	margin-top: 45px;
+	margin-top: 42px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -201,7 +205,7 @@ li {
 }
 
 .service:nth-child(n+4) {
-	margin-top: 34px;
+	margin-top: 29px;
 }
 
 .service__wrapper {
@@ -223,6 +227,7 @@ li {
 }
 
 .icon-square {
+	margin-top: 2px;
 	display: block;
 	width: 60px;
 	height: 60px;
@@ -250,11 +255,4 @@ li {
 
 .icon-square--star {
 	background: url('./assets/img/services-item-6.svg') no-repeat;
-}
-
-/*----------FOOTER----------*/
-
-.footer {
-	min-height: 6px;
-	background-color: #fff;
 }
