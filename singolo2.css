@@ -21,10 +21,10 @@ li {
 	list-style: none;
 }
 
-img {
+/*img {
 	max-width: 100%;
 	height: auto;
-}
+}*/
 
 .wrapper {
 	margin: 0 auto;
@@ -49,10 +49,12 @@ img {
     margin-top: 20px;
     line-height: 3rem;
     font-weight: 300;
+    letter-spacing: -.2px;
 }
 
 .portfolio__buttons {
-    margin-top: 13px;
+    margin-top: 8px;
+    display: flex;
 }
 
 .portfolio__button {
@@ -66,6 +68,12 @@ img {
     border: 1px solid #767e9e;
     border-radius: 5px;
     outline: none;
+    cursor: pointer;
+}
+
+.portfolio__button:hover {
+    border: 1px solid #dedede;
+    color: #dedede;
 }
 
 .portfolio__button:last-child {
@@ -73,6 +81,7 @@ img {
 }
 
 .portfolio__button--current {
+    border: 1px solid #dedede;
     color: #dedede;
 }
 
@@ -92,14 +101,116 @@ img {
     margin-right: 20px;
     margin-bottom: 20px;
     width: 220px;
-    height: 187px;
-}
-
-.gallety__image {
-    width: 220px;
-    height: 187px;
+    height: 187px;    
 }
 
 .gallery__item:nth-child(4n) {
     margin: 0;
+}
+
+.gallery__image {
+    width: 220px;
+    height: 187px;
+    object-fit: none;
+}
+
+.about-us {
+    margin-bottom: 6px;
+    min-height: 728px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 6px 0px #fff;
+}
+
+.about-us__title {
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #666d89;
+}
+
+.about-us__text {
+    margin-top: 20px;
+    line-height: 3rem;
+    font-weight: 300;
+    letter-spacing: -.1px;
+}
+
+.people {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people__item {
+    width: 300px;
+}
+
+.people__item:nth-child(2) .people__image {
+    margin-left: -1px;
+}
+
+.people__item:first-child .people__icons {
+    margin-left: 1px;
+}
+
+.people__image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.people__title {
+    margin-top: 17px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 900;
+    color: #666d89;
+    letter-spacing: -.25px;
+}
+
+.people__text {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    line-height: 2.156rem;
+    font-weight: 400;
+    letter-spacing: -.14px;
+}
+
+.people__icons {
+    margin-top: 22px;
+    display: flex;
+}
+
+.people__social-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.people__social-icon:hover {
+    cursor: pointer;
+}
+
+.people__link {
+    margin-right: 8px;
+}
+
+.people__link:last-child {
+    margin-right: 0;
+}
+
+.people__social-icon--facebook {
+    background: url('./assets/img/portfolio/icon_facebook.png');
+}
+
+.people__social-icon--google {
+    background: url('./assets/img/portfolio/icon_google.png');
+}
+
+.people__social-icon--twitter {
+    background: url('./assets/img/portfolio/icon_twitter.png');
+}
+
+.people__social-icon--linkedin {
+    background: url('./assets/img/portfolio/icon_linkedin.png');
 }
