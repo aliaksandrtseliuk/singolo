@@ -89,6 +89,10 @@ a {
 	font-weight: 400;
 }
 
+.form-quote__item::placeholder {
+	color: #f48c8f;
+}
+
 .form-quote__textarea {
 	height: 202px;
 	resize: none;
