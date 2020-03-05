@@ -14,10 +14,10 @@
             <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="layout-2-columns">
                 <form class="form-quote" action method="POST">
-                    <input class="form-quote__item" type="text" placeholder="Name (Required)" required>
-                    <input class="form-quote__item" type="email" placeholder="Email (Required)" required>
-                    <input class="form-quote__item" type="text" placeholder="Subject">
-                    <textarea class="form-quote__item form-quote__textarea" cols="60" rows="15" placeholder="Describe your project in detail..."></textarea>
+                    <input class="form-quote__item" type="text" name="name"  placeholder="Name (Required)" required>
+                    <input class="form-quote__item" type="email" name="email" placeholder="Email (Required)" required>
+                    <input class="form-quote__item" type="text" name="text" placeholder="Subject">
+                    <textarea class="form-quote__item form-quote__textarea" name="textarea" cols="60" rows="15" placeholder="Describe your project in detail..."></textarea>
                     <button class="form-quote__item form-quote__button" type="submit">Submit</button>
                 </form>
 
