@@ -1,0 +1,82 @@
+.portfolio {
+    margin-bottom: 6px;
+    min-height: 864px;
+    background-color: $main-background;
+    box-shadow: 0px 6px 0px #323746;
+
+    &__title {
+        padding-top: 60px;
+        font-size: 3rem;
+        font-weight: 900;
+        color: $text-color2;
+    }
+
+    &__text {
+        margin-top: 20px;
+        line-height: 3rem;
+        font-weight: 300;
+        letter-spacing: -.2px;
+    }
+
+    &__buttons {
+        margin-top: 8px;
+        display: flex;
+    }
+
+    &__button {
+        margin-right: 10px;
+        padding: 0 6px;
+        font-size: 1.2rem;
+        line-height: 2.156rem;
+        font-weight: 400;
+        color: inherit;
+        background-color: inherit;
+        border: 1px solid $text-color;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid $portfolio-hover-color;
+            color: $portfolio-hover-color;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--current {
+            border: 1px solid $portfolio-hover-color;
+            color: $portfolio-hover-color;
+        }
+    }
+}
+
+.layout-4-columns {
+    margin-top: 19px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-height: 610px;
+    overflow: hidden;
+
+    &__item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 220px;
+        height: 187px;
+        
+        &:nth-child(4n) {
+            margin: 0;
+        }
+    }
+
+    &__image {
+        width: 220px;
+        height: 187px;
+        object-fit: none;
+    }
+}

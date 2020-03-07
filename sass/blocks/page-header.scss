@@ -1,0 +1,68 @@
+.header {
+	position: relative;
+	min-height: 89px;
+	background-color: $main-background;
+	box-shadow: 0px 6px 0px #323746;
+
+	&  .wrapper {
+		min-height: inherit;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		position: relative;
+		font-size: 2.5rem;
+		font-weight: bold;
+		color: #fff;
+		text-transform: uppercase;
+
+		&::before {
+			content: '*';
+			position: absolute;
+			top: 0;
+			right: -10px;
+			color: $pink-background;
+		}
+	}
+}
+
+.navigation {
+	margin-top: 6px;
+	display: flex;
+
+	&__item {
+		margin-left: 28px;
+		line-height: 0;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:nth-child(n+2)::before {
+			content: '';
+			position: absolute;
+			margin-left: -16px;
+			width: 2px;
+			height: 2px;
+			border-radius: 50%;
+			background-color: #323746;
+		}
+	}
+
+	&__link {
+		font-size: 1.2rem;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $pink-background;
+		}
+
+		&--current {
+			color: $pink-background;
+		}
+	}
+}

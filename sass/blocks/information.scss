@@ -1,0 +1,61 @@
+.information {
+	width: 300px;
+	font-size: 1.2rem;
+	line-height: 2.156rem;
+	font-weight: 400;
+	color: $quote-text-color;
+
+	&__title {
+		font-size: 1.8rem;
+		line-height: 1.786rem;
+		font-weight: 900;
+		letter-spacing: -.09px;
+	}
+
+	&__text {
+		margin-top: 12px;
+		text-align: justify;
+		letter-spacing: -.139px;
+	}
+
+	&-list {
+		margin-top: 24px;
+
+		&__link {
+			position: relative;
+			padding-left: 23px;
+			color: inherit;
+			letter-spacing: -.17px;
+
+			&:hover {
+				color: $text-color;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				  top: 50%;
+				  transform: translate(0, -50%);
+				width: 13px;
+				height: 11px;
+				background-repeat: no-repeat;
+			}
+
+			&--location::before {
+				background-image: url('./assets/img/form/location.svg');
+				background-position: center center;
+			}
+
+			&--phone::before {
+				background-image: url('./assets/img/form/phone.svg');
+				background-position: center center;
+			}
+
+			&--mail::before {
+				background-image: url('./assets/img/form/mail.svg');
+				background-position-y: 3.5px;
+			}
+		}
+	}
+}

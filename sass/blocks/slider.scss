@@ -1,0 +1,63 @@
+.slider {
+	margin-bottom: 6px;
+	min-height: 600px;
+	background-color: $pink-background;
+	box-shadow: 0px 6px 0px #ea676b;
+
+	& .wrapper {
+		position: relative;
+	}
+
+	&__images {
+		position: relative;
+		min-height: inherit;
+	}
+
+	&__image {
+		position: absolute;
+
+		&--phone-vertical {
+			top: 59px;
+			left: 72px;
+		}
+
+		&--phone-horizontal {
+			top: 181px;
+			right: 72px;
+		}
+	}
+
+	&__phone-background {
+		z-index: 10;
+
+		&--vertical {
+			top: 124px;
+			left: 86px;
+		}
+
+		&--horizontal {
+			top: 194px;
+			right: 162px;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 286px;
+		width: 16px;
+		height: 27px;
+		background: url('./assets/img/slider-arrow.png') no-repeat;
+		cursor: pointer;
+		border: none;
+		outline: none;
+
+		&--left {
+			left: 2px;
+		}
+
+		&--right {
+			right: 0;
+			transform: rotate(-180deg);
+		}
+	}
+}
