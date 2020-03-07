@@ -1,0 +1,20 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "Учебный проект Rolling Scope School !",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliaksandrtseliuk/singolo.git"
+  },
+  "author": "ALI[BRD]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliaksandrtseliuk/singolo/issues"
+  },
+  "homepage": "https://github.com/aliaksandrtseliuk/singolo#readme"
+}
