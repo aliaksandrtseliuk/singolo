@@ -222,7 +222,7 @@ li {
 
 .portfolio {
   margin-bottom: 6px;
-  min-height: 864px;
+  min-height: 863px;
   background-color: #2d303a;
   box-shadow: 0px 6px 0px #323746;
 }
@@ -233,13 +233,13 @@ li {
   color: #666d89;
 }
 .portfolio__text {
-  margin-top: 20px;
+  margin-top: 18px;
   line-height: 3rem;
   font-weight: 300;
   letter-spacing: -0.2px;
 }
 .portfolio__buttons {
-  margin-top: 8px;
+  margin-top: 10px;
   display: flex;
 }
 .portfolio__button {
@@ -305,14 +305,14 @@ li {
   color: #666d89;
 }
 .about-us__text {
-  margin-top: 20px;
+  margin-top: 18px;
   line-height: 3rem;
   font-weight: 300;
   letter-spacing: -0.1px;
 }
 
 .people {
-  margin-top: 42px;
+  margin-top: 44px;
   display: flex;
   justify-content: space-between;
 }
@@ -391,7 +391,7 @@ li {
   letter-spacing: -0.1px;
 }
 .quote__text {
-  margin-top: 30px;
+  margin-top: 28px;
   font-weight: 300;
   line-height: 3rem;
   color: #f0d8d9;
@@ -400,7 +400,7 @@ li {
 }
 
 .layout-2-columns {
-  margin-top: 42px;
+  margin-top: 44px;
   display: flex;
   justify-content: space-between;
 }

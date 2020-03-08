@@ -1,6 +1,6 @@
 .portfolio {
     margin-bottom: 6px;
-    min-height: 864px;
+    min-height: 863px;
     background-color: $main-background;
     box-shadow: 0px 6px 0px #323746;
 
@@ -12,14 +12,14 @@
     }
 
     &__text {
-        margin-top: 20px;
+        margin-top: 18px;
         line-height: 3rem;
         font-weight: 300;
         letter-spacing: -.2px;
     }
 
     &__buttons {
-        margin-top: 8px;
+        margin-top: 10px;
         display: flex;
     }
 
