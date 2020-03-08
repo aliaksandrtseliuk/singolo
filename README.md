@@ -1,1 +1,3 @@
-# aliaksandrtseliuk.singolo.github.io
+# Singolo
+
+<https://aliaksandrtseliuk.singolo.github.io>
