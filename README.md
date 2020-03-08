@@ -1,3 +1,1 @@
-# SINGOLO
-
-Учебный проект Rolling Scope School !
+# aliaksandrtseliuk.singolo.github.io
