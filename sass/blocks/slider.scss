@@ -1,8 +1,13 @@
 .slider {
+	margin-top: 89px;
 	margin-bottom: 6px;
-	min-height: 600px;
-	background-color: $pink-background;
+	min-height: 594px;
+	background: $pink-background;
 	box-shadow: 0px 6px 0px #ea676b;
+
+	&--slide-background {
+		background: #648bf0;
+	}
 
 	& .wrapper {
 		position: relative;
@@ -11,39 +16,52 @@
 	&__images {
 		position: relative;
 		min-height: inherit;
+
+		animation-name: fade;
+		animation-duration: 1.5s;
 	}
 
 	&__image {
 		position: absolute;
 
 		&--phone-vertical {
-			top: 59px;
+			top: 53px;
 			left: 72px;
 		}
 
 		&--phone-horizontal {
-			top: 181px;
+			top: 175px;
 			right: 72px;
 		}
+
+		&--hidden {
+			display: none;
+		}
+	}
+
+	&__image2 {
+		position: absolute;
+		top: 40.5px;
+		left: 211.5px;	
 	}
 
 	&__phone-background {
 		z-index: 10;
 
 		&--vertical {
-			top: 124px;
+			top: 118px;
 			left: 86px;
 		}
 
 		&--horizontal {
-			top: 194px;
+			top: 188px;
 			right: 162px;
 		}
 	}
 
 	&__button {
 		position: absolute;
-		top: 286px;
+		top: 280px;
 		width: 16px;
 		height: 27px;
 		background: url('./assets/img/slider-arrow.png') no-repeat;
@@ -60,4 +78,13 @@
 			transform: rotate(-180deg);
 		}
 	}
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }

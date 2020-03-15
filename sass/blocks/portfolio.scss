@@ -52,11 +52,8 @@
     }
 }
 
-.layout-4-columns {
-    margin-top: 18px;
-}
-
 .gallery {
+    margin-top: 18px;
     display: flex;
     flex-wrap: wrap;
 
@@ -78,5 +75,9 @@
         width: 220px;
         height: 187px;
         object-fit: none;
+
+        &--border {
+            border: 5px solid #F06C64;
+        }
     }
 }

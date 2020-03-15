@@ -9,6 +9,7 @@ html {
 }
 
 body {
+	position: relative;
     width: 1020px;
 	margin: 0 auto;
 
@@ -23,6 +24,10 @@ a {
 
 li {
 	list-style: none;
+}
+
+.hidden {
+	display: none;
 }
 
 .wrapper {
