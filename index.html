@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home-block">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,11 @@
             <a href="#"><h1 class="header__logo">Singolo</h1></a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Home</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Services</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Portfolio</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
+                    <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#home-block">Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#services-block">Services</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#portfolio-block">Portfolio</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#about-block">About</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#contact-block">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,12 +32,17 @@
                     <img src="./assets/img/phone-image-vertical.png" alt="phone-image-vertical" class="slider__image slider__phone-background slider__phone-background--vertical">
                     <img src="./assets/img/phone-image-horizontal.png" alt="phone-image-horizontal" class="slider__image slider__phone-background slider__phone-background--horizontal">
                 </div>
+
+                <div class="slider__images">
+                    <img src="./assets/img/slide2.png" alt="slide2" class="slider__image2">
+                </div>
+
                 <button class="slider__button slider__button--left"></button>
                 <button class="slider__button slider__button--right"></button>
             </div> 
         </section>
 
-        <section class="services">
+        <section class="services" id="services-block">
             <div class="wrapper">
                 <h1 class="services__title">Our Services</h1>
                 <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -105,7 +110,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio-block">
             <div class="wrapper">
                 <h1 class="portfolio__title">Portfolio</h1>
                 <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -115,7 +120,6 @@
                     <button class="portfolio__button">Graphic Design</button>
                     <button class="portfolio__button">Artwork</button>
                 </nav>
-                <div class="layout-4-columns">
                     <ul class="gallery">
                         <li class="gallery__item">
                             <img class="gallery__image" src="./assets/img/portfolio/gallery_image_1.png" alt="gallery_image_1">
@@ -153,19 +157,11 @@
                         <li class="gallery__item">
                             <img class="gallery__image" src="./assets/img/portfolio/gallery_image_12.png" alt="gallery_image_12">
                         </li>
-    
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_11.png" alt="gallery_image_11">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_12.png" alt="gallery_image_12">
-                        </li>
                     </ul>
-                </div>
             </div>
         </section>
     
-        <section class="about-us">
+        <section class="about-us" id="about-block">
             <div class="wrapper">
                 <h1 class="about-us__title">About Us</h1>
                 <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -209,16 +205,16 @@
             </div>
         </section>
 
-        <section class="quote">
+        <section class="quote" id="contact-block">
             <div class="wrapper">
                 <h1 class="quote__title">Get a Quote</h1>
                 <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="layout-2-columns">
                     <form class="form-quote" action method="POST">
-                        <input class="form-quote__item" type="text" name="name"  placeholder="Name (Required)" required>
-                        <input class="form-quote__item" type="email" name="email" placeholder="Email (Required)" required>
-                        <input class="form-quote__item" type="text" name="text" placeholder="Subject">
-                        <textarea class="form-quote__item form-quote__textarea" name="textarea" cols="60" rows="15" placeholder="Describe your project in detail..."></textarea>
+                        <input id="name" class="form-quote__item" type="text" name="name"  placeholder="Name (Required)" required>
+                        <input id="email" class="form-quote__item" type="email" name="email" placeholder="Email (Required)" required>
+                        <input id="subject" class="form-quote__item" type="text" name="text" placeholder="Subject">
+                        <textarea id="description" class="form-quote__item form-quote__textarea" name="textarea" cols="60" rows="15" placeholder="Describe your project in detail..."></textarea>
                         <button class="form-quote__item form-quote__button" type="submit">Submit</button>
                     </form>
     
@@ -253,6 +249,16 @@
                 <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--linkedin"></span></a>
             </div>
         </div>
-    </footer> 
+    </footer>
+
+    <div class="modal hidden">
+        <div class="message">
+            <h3 class="message__title">Письмо отправлено</h3>
+            <p id="modal-theme" class="message__text"></p>
+            <p id="modal-text" class="message__text"></p>
+            <button class="message__button">ОК</button>
+        </div>
+    </div>
+    <script src="script.js"></script> 
 </body>
 </html>
