@@ -1,34 +1,32 @@
 // Навигация по сайту
 
-const navLinks = document.querySelectorAll('.navigation__link')
+const onScroll = () => {
+    const curPos = window.scrollY
+    const sections = document.querySelectorAll('section')
+    const links = document.querySelectorAll('.navigation__link')
 
-const activeLink = (event) => {
+    sections.forEach((block) => {
+        if (block.offsetTop <= curPos && (block.offsetTop + block.offsetHeight) > curPos) {
+            links.forEach((link) => {
+                link.classList.remove('navigation__link--current')
+                if (block.getAttribute('id') === link.getAttribute('href').substring(1)) {
+                    link.classList.add('navigation__link--current')
+                }
+            })
+        }
+    })
 
-    navLinks.forEach(link => link.classList.remove('navigation__link--current'))
-    event.target.closest('.navigation__link').classList.add('navigation__link--current')
-}
-
-document.querySelector('.navigation').addEventListener('click', activeLink)
-
-const scrollPage = () => {
-
-    // Изменение состояния ссылки HOME при scroll
-
-    if (window.pageYOffset < 1) {
-        navLinks.forEach(link => link.classList.remove('navigation__link--current'))
-        document.querySelector('.navigation__link').classList.add('navigation__link--current')
-    }
-    
     // Изменение вида HEADER при scroll
 
     if (window.pageYOffset >= 50) {
         document.querySelector('.header').classList.add('header--scroll')
     } else {
         document.querySelector('.header').classList.remove('header--scroll')
+        document.querySelector('.navigation__link').classList.add('navigation__link--current')
     }
 }
 
-window.addEventListener('scroll', scrollPage)
+document.addEventListener('scroll', onScroll)
 
 // Включение/отключение экранов смартфонов
 
@@ -85,15 +83,22 @@ for (let filterButton of FILTER__BUTTONS) {
 
 // Появление рамки у изображений галереи
 
-const portfolioImages = document.querySelectorAll('.gallery__image')
+const galleryImages = document.querySelectorAll('.gallery__image')
 
-const borderImage = (event) => {
-    portfolioImages.forEach(image => image.classList.remove('gallery__image--border'))
-    event.target.closest('.gallery__image').classList.add('gallery__image--border')
+const clickHandler = (event) => {
+
+    const imageLinks = document.querySelectorAll('.gallery__image')
+
+    imageLinks.forEach(item => {
+        item.classList.remove('gallery__image--border')
+    })
+
+    event.target.classList.add('gallery__image--border')
 }
 
-document.querySelector('.gallery').addEventListener('click', borderImage)
-
+for (let item of galleryImages) {
+    item.addEventListener('click', clickHandler)
+}
 
 // Отправка формы
 
@@ -118,6 +123,9 @@ const showModal = () => {
 
         document.querySelector('.modal').classList.remove('hidden')
     }
+
+    // Сброс данных формы
+    document.querySelector('.form-quote').reset()
 }
 
 const closeModal = () => {
