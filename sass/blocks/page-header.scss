@@ -8,6 +8,7 @@
 	box-shadow: 0px 6px 0px #323746;
 	z-index: 999;
 
+	
 	&--scroll {
 		min-height: 40px;
 	}
@@ -17,6 +18,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@media (max-width: $tablet-width) {
+			width: calc(100% - 80px);
+		}
 	}
 
 	&__logo {
@@ -55,7 +60,7 @@
 			width: 2px;
 			height: 2px;
 			border-radius: 50%;
-			background-color: #323746;
+			background-color: #fff;
 		}
 	}
 

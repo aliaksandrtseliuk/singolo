@@ -4,6 +4,10 @@
 	background-color: $pink-background;
 	box-shadow: 0px 6px 0px #ea676b;
 
+	@media (max-width: $tablet-width) {
+		min-height: 625px;
+	}
+
 	&__title {
 		padding-top: 68px;
 		font-size: 3rem;
@@ -30,7 +34,7 @@
 }
 
 .form-quote {
-	width: 619px;
+	width: calc(619 / 940 * 100%);
 	display: flex;
 	flex-direction: column;
 
@@ -63,6 +67,10 @@
 	&__textarea {
 		height: 202px;
 		resize: none;
+
+		@media (max-width: $tablet-width) {
+			height: calc(202 / 1020 * 100vw);
+		}
 	}
 
 	&__button {

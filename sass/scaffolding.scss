@@ -11,12 +11,16 @@ html {
 
 body {
 	position: relative;
-   	width: 1020px;
+    width: 1020px;
 	margin: 0 auto;
 
 	font-size: 1.8rem;
 	font-family: 'Lato', Arial, sans-serif;
-	color: #767e9e;
+	color: $text-color;
+
+	@media (max-width: $tablet-width) {
+		width: 100%;
+	}
 }
 
 a {
@@ -34,4 +38,8 @@ li {
 .wrapper {
 	margin: 0 auto;
 	width: 940px;
+
+	@media (max-width: $tablet-width) {
+		width: calc(100% - 80px);
+	}
 }

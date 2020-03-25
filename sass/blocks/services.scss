@@ -4,6 +4,10 @@
 	background-color: #f2f2f2;
 	box-shadow: 0px 6px 0px #fff;
 
+	@media (max-width: $tablet-width) {
+		min-height: 674px;
+	}
+
 	&__title {
 		margin-top: 62px;
 		display: inline-block;
@@ -11,6 +15,10 @@
 		line-height: 3rem;
 		font-weight: 900;
 		color: $text-color2;
+
+		@media (max-width: $tablet-width) {
+			margin-top: 39px;
+		}
 	}
 
 	&__text {
@@ -18,6 +26,11 @@
 		line-height: 3rem;
 		font-weight: 300;
 		letter-spacing: -.03px;
+		text-align: justify;
+
+		@media (max-width: $tablet-width) {
+			margin-top: 18px;
+		}
 	}
 }
 
@@ -26,6 +39,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+	@media (max-width: $tablet-width) {
+		margin-top: 28px;
+	}
 }
 
 .service {
@@ -33,12 +50,31 @@
 	justify-content: space-between;
 	width: 300px;
 
+	@media (max-width: $tablet-width) {
+		justify-content: flex-start;
+		width: 50%;
+	}
+
 	&:nth-child(n+4) {
 		margin-top: 29px;
+
+		@media (max-width: $tablet-width) {
+			margin-top: 0;
+		}
+	}
+
+	&:nth-child(n+3) {
+		@media (max-width: $tablet-width) {
+			margin-top: 40px;
+		}
 	}
 
 	&__wrapper {
 		width: 220px;
+
+		@media (max-width: $tablet-width) {
+			width: 75%;
+		}
 	}
 
 	&__title {
@@ -53,6 +89,11 @@
 		font-size: 1.2rem;
 		line-height: 2.156rem;
 		font-weight: 400;
+		text-align: justify;
+
+		@media (max-width: $tablet-width) {
+			width: 85%;
+		}
 	}
 }
 
@@ -62,6 +103,10 @@
 	width: 60px;
 	height: 60px;
 	background-repeat: no-repeat;
+
+	@media (max-width: $tablet-width) {
+		margin-right: 20px;
+	}
 
 	&--pensil {
 		background: url('./assets/img/services-item-1.svg');

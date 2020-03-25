@@ -16,6 +16,7 @@
         line-height: 3rem;
         font-weight: 300;
         letter-spacing: -.1px;
+        text-align: justify;
     }
 }
 
@@ -34,12 +35,28 @@
         &:first-child .people__icons {
             margin-left: 1px;
         }
+
+        @media (max-width: $tablet-width) {
+			width: calc(100% / 3 - 15px);
+		}
     }
 
     &__image {
         width: 300px;
         height: 300px;
         overflow: hidden;
+        
+        @media (max-width: $tablet-width) {
+            width: auto;
+            height: auto;
+		}
+        
+        & img {
+            @media (max-width: $tablet-width) {
+                max-width: 100%;
+                height: auto;
+            }
+        }
     }
 
     &__title {
@@ -57,6 +74,7 @@
         line-height: 2.156rem;
         font-weight: 400;
         letter-spacing: -.14px;
+        text-align: justify;
     }
 
     &__icons {

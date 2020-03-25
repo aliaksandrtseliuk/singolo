@@ -5,6 +5,10 @@
 	background: $pink-background;
 	box-shadow: 0px 6px 0px #ea676b;
 
+	@media (max-width: $tablet-width) {
+		min-height: calc(594 / 1020 * 100vw)
+	}
+
 	&--slide-background {
 		background: #648bf0;
 		box-shadow: 0px 6px 0px #647bf0;
@@ -12,6 +16,7 @@
 
 	& .wrapper {
 		position: relative;
+		min-height: inherit;
 	}
 
 	&__images {
@@ -28,11 +33,23 @@
 		&--phone-vertical {
 			top: 53px;
 			left: 72px;
+
+			@media (max-width: $tablet-width) {
+				top: calc(53 / 1020 * 100vw);
+				left: calc(72 / 1020 * 100vw);
+				width: calc(240 / 1020 * 100%);
+			}
 		}
 
 		&--phone-horizontal {
 			top: 175px;
 			right: 72px;
+
+			@media (max-width: $tablet-width) {
+				top: calc(175 / 1020 * 100vw);
+				right: calc(72 / 1020 * 100vw);
+				width: calc(483 / 1020 * 100%)
+			}
 		}
 
 		&--hidden {
@@ -43,7 +60,13 @@
 	&__image2 {
 		position: absolute;
 		top: 40.5px;
-		left: 211.5px;	
+		left: 211.5px;
+		
+		@media (max-width: $tablet-width) {
+			top: calc(40.5 / 1020 * 100vw);
+			left: calc(211.5 / 1020 * 100vw);
+			width: calc(517 / 1020 * 100%);
+		}
 	}
 
 	&__phone-background {
@@ -52,11 +75,23 @@
 		&--vertical {
 			top: 118px;
 			left: 86px;
+
+			@media (max-width: $tablet-width) {
+				top: calc(112 / 1020 * 100vw);
+				left: calc(86 / 1020 * 100vw);
+				width: calc(188 / 1020 * 100%)
+			}
 		}
 
 		&--horizontal {
 			top: 188px;
 			right: 162px;
+
+			@media (max-width: $tablet-width) {
+				top: calc(187 / 1020 * 100vw);
+				right: calc(154 / 1020 * 100vw);
+				width: calc(333 / 1020 * 100%);
+			}
 		}
 	}
 
@@ -69,6 +104,10 @@
 		cursor: pointer;
 		border: none;
 		outline: none;
+
+		@media (max-width: $tablet-width) {
+			top: calc(280 / 1020 * 100vw);
+		}
 
 		&--left {
 			left: 2px;
