@@ -20,9 +20,16 @@ const onScroll = () => {
 
     if (window.pageYOffset >= 50) {
         document.querySelector('.header').classList.add('header--scroll')
+        document.querySelector('.header__burger').classList.add('header__burger--onScroll')
+
+        if (document.querySelector('.header__burger').classList.contains('header__burger--rotate')) {
+            document.querySelector('.header__link').classList.add('header__link--onScroll')
+            document.querySelector('.header__burger').classList.remove('header__burger--onScroll')
+        }
     } else {
         document.querySelector('.header').classList.remove('header--scroll')
         document.querySelector('.navigation__link').classList.add('navigation__link--current')
+        document.querySelector('.header__burger').classList.remove('header__burger--onScroll')
     }
 }
 
@@ -184,3 +191,20 @@ nextButtonSlide.addEventListener('click', plusSlide)
 document.querySelectorAll('.slider__button').forEach(item => item.addEventListener('click', () => {
     document.querySelector('.slider').classList.toggle('slider--slide-background')
 }))
+
+
+// Взаимодействие с навигацией в режиме мобильного устройтсва
+
+const menuBurger = document.querySelector('.header__burger')
+
+const toggleLeftNav = () => {
+    menuBurger.classList.toggle('header__burger--rotate')
+    document.querySelector('.header__link').classList.toggle('header__link--left-slide')
+    document.querySelector('.navigation').classList.toggle('navigation--left-slide')
+}
+
+menuBurger.addEventListener('click', toggleLeftNav)
+
+const navLinks = document.querySelectorAll('.navigation__link')
+
+navLinks.forEach(link => link.addEventListener('click', toggleLeftNav))
