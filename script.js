@@ -208,3 +208,11 @@ menuBurger.addEventListener('click', toggleLeftNav)
 const navLinks = document.querySelectorAll('.navigation__link')
 
 navLinks.forEach(link => link.addEventListener('click', toggleLeftNav))
+
+function burgerOnScroll () {
+    if (window.pageYOffset >= 50 && document.querySelector('.header__link').classList.contains('header__link--left-slide')) {
+        document.querySelector('.header__burger').classList.add('header__burger--afterLinkClick')
+    }
+}
+
+
