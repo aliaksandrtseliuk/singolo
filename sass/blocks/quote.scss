@@ -8,6 +8,10 @@
 		min-height: 625px;
 	}
 
+	@media (max-width: $mobile-width) {
+		min-height: 969px;
+	}
+
 	&__title {
 		padding-top: 68px;
 		font-size: 3rem;
@@ -15,6 +19,10 @@
 		font-weight: 900;
 		color: $quote-text-color;
 		letter-spacing: -.1px;
+
+		@media (max-width: $mobile-width) {
+			padding-top: calc(119.68 / 1020 * 100vw);
+		}
 	}
 
 	&__text {
@@ -24,6 +32,10 @@
 		color: $quote-text-color;
 		letter-spacing: -.21px;
 		text-align: justify;
+
+		@media (max-width: $mobile-width) {
+			margin-top: calc(38.08 / 1020 * 100vw);
+		}
 	}
 }
 
@@ -31,12 +43,21 @@
 	margin-top: 44px;
 	display: flex;
 	justify-content: space-between;
+
+	@media (max-width: $mobile-width) {
+		margin-top: calc(51.68 / 1020 * 100vw);
+		flex-direction: column;
+	}
 }
 
 .form-quote {
 	width: calc(619 / 940 * 100%);
 	display: flex;
 	flex-direction: column;
+
+	@media (max-width: $mobile-width) {
+		width: 100%;
+	}
 
 	&__item {
 		color: $quote-main-color;
@@ -71,6 +92,10 @@
 		@media (max-width: $tablet-width) {
 			height: calc(202 / 1020 * 100vw);
 		}
+
+		@media (max-width: $mobile-width) {
+			height: calc(432.48 / 1020 * 100vw);
+		}
 	}
 
 	&__button {
@@ -81,6 +106,10 @@
 
 		&:hover {
 			color: $text-color;
+		}
+
+		@media (max-width: $mobile-width) {
+			width: 100%;
 		}
 	}
 }

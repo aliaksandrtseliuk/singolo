@@ -1,5 +1,5 @@
 .slider {
-	margin-top: 89px;
+	margin-top: 95px;
 	margin-bottom: 6px;
 	min-height: 594px;
 	background: $pink-background;
@@ -7,6 +7,10 @@
 
 	@media (max-width: $tablet-width) {
 		min-height: calc(594 / 1020 * 100vw)
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-top: 77px;
 	}
 
 	&--slide-background {
@@ -17,6 +21,14 @@
 	& .wrapper {
 		position: relative;
 		min-height: inherit;
+
+		@media (max-width: $tablet-width) {
+			width: calc(100% - 53.72px);
+		}
+
+		@media (max-width: $mobile-width) {
+			width: calc(100% - 20px);
+		}
 	}
 
 	&__images {
@@ -39,6 +51,11 @@
 				left: calc(72 / 1020 * 100vw);
 				width: calc(240 / 1020 * 100%);
 			}
+
+			@media (max-width: $mobile-width) {
+				top: calc(54.4 / 1020 * 100vw);
+				left: calc(81.6 / 1020 * 100vw);
+			}
 		}
 
 		&--phone-horizontal {
@@ -49,6 +66,11 @@
 				top: calc(175 / 1020 * 100vw);
 				right: calc(72 / 1020 * 100vw);
 				width: calc(483 / 1020 * 100%)
+			}
+
+			@media (max-width: $mobile-width) {
+				top: calc(176.8 / 1020 * 100vw);
+				right: calc(81.6 / 1020 * 100vw);
 			}
 		}
 
@@ -81,6 +103,11 @@
 				left: calc(86 / 1020 * 100vw);
 				width: calc(188 / 1020 * 100%)
 			}
+
+			@media (max-width: $mobile-width) {
+				top: calc(117 / 1020 * 100vw);
+				left: calc(96 / 1020 * 100vw);
+			}
 		}
 
 		&--horizontal {
@@ -92,6 +119,11 @@
 				right: calc(154 / 1020 * 100vw);
 				width: calc(333 / 1020 * 100%);
 			}
+
+			@media (max-width: $mobile-width) {
+				top: calc(188 / 1020 * 100vw);
+				right: calc(167 / 1020 * 100vw);
+			}
 		}
 	}
 
@@ -101,12 +133,19 @@
 		width: 16px;
 		height: 27px;
 		background: url('./assets/img/slider-arrow.png') no-repeat;
+		background-size: cover;
 		cursor: pointer;
 		border: none;
 		outline: none;
 
 		@media (max-width: $tablet-width) {
 			top: calc(280 / 1020 * 100vw);
+		}
+
+		@media (max-width: $mobile-width) {
+			top: calc(267.8 / 1020 * 100vw);
+			width: calc(38.08 / 1020 * 100vw);
+			height: calc(73.44 / 1020 * 100vw);
 		}
 
 		&--left {

@@ -5,6 +5,11 @@
 	font-weight: 400;
 	color: $quote-text-color;
 
+	@media (max-width: $mobile-width) {
+		width: 100%;
+		margin-top: calc(87.04 / 1020 * 100vw);
+	}
+
 	&__title {
 		font-size: 1.8rem;
 		line-height: 1.786rem;
@@ -16,10 +21,18 @@
 		margin-top: 12px;
 		text-align: justify;
 		letter-spacing: -.139px;
+
+		@media (max-width: $mobile-width) {
+			margin-top: calc(18.6 / 1020 * 100vw);
+		}
 	}
 
 	&-list {
 		margin-top: 24px;
+
+		@media (max-width: $mobile-width) {
+			margin-top: calc(18.6 / 1020 * 100vw);
+		}
 
 		&__link {
 			position: relative;

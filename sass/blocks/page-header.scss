@@ -8,12 +8,16 @@
 	box-shadow: 0px 6px 0px #323746;
 	z-index: 999;
 
+	@media (max-width: $mobile-width) {
+		min-height: 71px;
+	}
 	
 	&--scroll {
 		min-height: 40px;
 	}
 
 	&  .wrapper {
+		position: relative;
 		min-height: inherit;
 		display: flex;
 		justify-content: space-between;
@@ -21,6 +25,46 @@
 
 		@media (max-width: $tablet-width) {
 			width: calc(100% - 80px);
+		}
+
+		@media (max-width: $mobile-width) {
+			width: calc(100% - 40px);
+		}
+	}
+
+	&__burger {
+		display: none;
+
+		@media (max-width: $mobile-width) {
+			display: block;
+			position: absolute;
+			top: 25.5px;
+			left: 0;
+			width: 25px;
+			height: 20px;
+			transition: transform 0.5s;
+			cursor: pointer;
+			z-index: 500;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 25px;
+			height: 2.4px;
+			border-radius: 5px;
+			background-color: #fff;
+			box-shadow: 0 8.8px 0 0 #fff, 0 17.6px 0 0 #fff;
+		}
+
+		&--rotate {
+			transform: rotate(90deg);
+		}
+
+		&--onScroll {
+			top: 10px;
 		}
 	}
 
@@ -31,12 +75,36 @@
 		color: #fff;
 		text-transform: uppercase;
 
-		&::before {
+		&::after {
 			content: '*';
 			position: absolute;
 			top: 0;
 			right: -10px;
 			color: $pink-background;
+		}
+
+		@media (max-width: $mobile-width) {
+			font-size: 1.969rem;
+			line-height: 2.4rem;
+			letter-spacing: -.03em;
+		}
+	}
+
+	&__link {
+		@media (max-width: $mobile-width) {
+			display: block;
+			margin: 0 auto;
+		}
+
+		&--left-slide {
+			margin: 0;
+			left: 68.5px;
+			position: fixed;
+			z-index: 998;
+		}
+
+		&--onScroll {
+			top: 25px;
 		}
 	}
 }
@@ -45,12 +113,37 @@
 	margin-top: 6px;
 	display: flex;
 
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+
+	&--left-slide {
+		@media (max-width: $mobile-width) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding-top: 232px;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100vh;
+			background: linear-gradient(to right, $main-background 0%, $main-background 74.13%,#0008 74.13%,#0008 100%);
+			transition: left 0.5s;
+		}
+	}
+
 	&__item {
 		margin-left: 28px;
 		line-height: 0;
 
 		&:first-child {
 			margin-left: 0;
+
+			@media (max-width: $mobile-width) {
+				margin-left: 71px;
+			}
+	
 		}
 
 		&:nth-child(n+2)::before {
@@ -61,7 +154,18 @@
 			height: 2px;
 			border-radius: 50%;
 			background-color: #fff;
+
+			@media (max-width: $mobile-width) {
+				display: none;
+			}
 		}
+
+		@media (max-width: $mobile-width) {
+			margin: 0;
+			margin-left: 71px;
+			margin-bottom: 27px;
+		}
+
 	}
 
 	&__link {
@@ -77,5 +181,12 @@
 		&--current {
 			color: $pink-background;
 		}
+
+		@media (max-width: $mobile-width) {
+			font-size: 2.4rem;
+			line-height: 2.9rem;
+			letter-spacing: -0.035em;
+		}
 	}
 }
+

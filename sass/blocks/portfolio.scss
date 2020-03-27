@@ -6,6 +6,10 @@
 
     @media (max-width: $tablet-width) {
 		min-height: 1096px;
+    }
+    
+    @media (max-width: $mobile-width) {
+		min-height: 844px;
 	}
 
     &__title {
@@ -13,6 +17,10 @@
         font-size: 3rem;
         font-weight: 900;
         color: $text-color2;
+
+        @media (max-width: $mobile-width) {
+            padding-top: 42px;
+        }
     }
 
     &__text {
@@ -20,6 +28,10 @@
         line-height: 3rem;
         font-weight: 300;
         letter-spacing: -.2px;
+
+        @media (max-width: $mobile-width) {
+            margin-top: 14px;
+        }
     }
 
     &__buttons {
@@ -62,6 +74,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media (max-width: $tablet-width) {
+        margin-top: 28px;
+    }
+
+    @media (max-width: $mobile-width) {
+        margin-top: 25px;
+    }
+
     &__item {
         margin-bottom: 20px;
         width: 220px;
@@ -71,8 +91,20 @@
             display: none;
         }
 
+        &:nth-child(n+9) {
+            @media (max-width: $mobile-width) {
+                display: none;
+            }
+        }
+
         @media (max-width: $tablet-width) {
             width: calc(100% / 3 - 15px);
+            max-height: 244px;
+        }
+
+        @media (max-width: $mobile-width) {
+            margin-bottom: 14px;
+            width: calc(100% / 2 - 6.5px);
             max-height: 244px;
         }
     }
