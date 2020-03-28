@@ -196,7 +196,6 @@ const toggleLeftNav = () => {
     menuBurger.classList.toggle('header__burger--rotate')
     document.querySelector('.header__link').classList.toggle('header__link--left-slide')
     document.querySelector('.navigation').classList.toggle('navigation--left-slide')
-    document.querySelector('body').classList.toggle('overflow')
 }
 
 menuBurger.addEventListener('click', toggleLeftNav)
