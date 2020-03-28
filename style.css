@@ -623,6 +623,11 @@ li {
   margin-top: 10px;
   display: flex;
 }
+@media (max-width: 374px) {
+  .portfolio__buttons {
+    justify-content: space-between;
+  }
+}
 .portfolio__button {
   margin-right: 10px;
   padding: 0 6px;
@@ -646,6 +651,13 @@ li {
 .portfolio__button--current {
   border: 1px solid #dedede;
   color: #dedede;
+}
+@media (max-width: 374px) {
+  .portfolio__button {
+    margin: 0;
+    padding: 0 calc(9 / 1020 * 100vw);
+    line-height: calc(70 / 1020 * 100vw);
+  }
 }
 
 .gallery {
