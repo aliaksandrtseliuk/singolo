@@ -46,6 +46,7 @@ li {
 }
 
 .overflow {
+  position: fixed;
   overflow: hidden;
 }
 
