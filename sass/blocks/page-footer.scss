@@ -1,70 +1,70 @@
 .footer {
-	min-height: 76px;
-	background-color: $main-background;
+  min-height: 76px;
+  background-color: $main-background;
 
-	& .wrapper {
-		min-height: inherit;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  & .wrapper {
+    min-height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-	&__text {
-		font-size: 1.2rem;
-		line-height: 2.156rem;
-		font-weight: 400;
+  &__text {
+    font-size: 1.2rem;
+    line-height: 2.156rem;
+    font-weight: 400;
 
-		@media (max-width: $mobile-width) {
-			display: none;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
 
-	&__icons {
-		display: flex;
+  &__icons {
+    display: flex;
 
-		@media (max-width: $mobile-width) {
-			width: 100%;
-			justify-content: center;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 
-	&__link {
-		margin-right: 8px;
-		width: 32px;
-		height: 32px;
+  &__link {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
 
-		&:last-child {
-			margin-right: 0;
-		}
-	}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-	&__social-icon {
-		display: block;
-		width: 32px;
-		height: 32px;
-		border: 1px solid $text-color;
-		border-radius: 50%;
-		background-position: center;
-		background-repeat: no-repeat;
+  &__social-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $text-color;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
 
-		&:hover {
-			border-color: $pink-background;
-		}
+    &:hover {
+      border-color: $pink-background;
+    }
 
-		&--facebook {
-			background-image: url('./assets/img/icons/icon-facebook.svg');
-		}
+    &--facebook {
+      background-image: url("./assets/img/icons/icon-facebook.svg");
+    }
 
-		&--google {
-			background-image: url('./assets/img/icons/icon-google.svg');
-		}
+    &--google {
+      background-image: url("./assets/img/icons/icon-google.svg");
+    }
 
-		&--twitter {
-			background-image: url('./assets/img/icons/icon-twitter.svg');
-		}
+    &--twitter {
+      background-image: url("./assets/img/icons/icon-twitter.svg");
+    }
 
-		&--linkedin {
-			background-image: url('./assets/img/icons/icon-linkedin.svg');
-		}
-	}
+    &--linkedin {
+      background-image: url("./assets/img/icons/icon-linkedin.svg");
+    }
+  }
 }

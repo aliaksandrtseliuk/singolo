@@ -1,168 +1,168 @@
 .about-us {
-    margin-bottom: 6px;
-    min-height: 728px;
-    background-color: #f2f2f2;
-    box-shadow: 0px 6px 0px #fff;
+  margin-bottom: 6px;
+  min-height: 728px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 6px 0px #fff;
 
-    @media (max-width: $tablet-width) {
-        min-height: calc(888.52 / 1020 * 100vw)
-    }
+  @media (max-width: $tablet-width) {
+    min-height: calc(888.52 / 1020 * 100vw);
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 1754px;
+  }
+
+  &__title {
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: $text-color2;
 
     @media (max-width: $mobile-width) {
-        min-height: 1754px;
+      padding-top: calc(89.76 / 1020 * 100vw);
     }
+  }
 
-    &__title {
-        padding-top: 60px;
-        font-size: 3rem;
-        font-weight: 900;
-        color: $text-color2;
+  &__text {
+    margin-top: 18px;
+    line-height: 3rem;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+    text-align: justify;
 
-        @media (max-width: $mobile-width) {
-            padding-top: calc(89.76 / 1020 * 100vw);
-        }
+    @media (max-width: $mobile-width) {
+      margin-top: calc(38.08 / 1020 * 100vw);
     }
-
-    &__text {
-        margin-top: 18px;
-        line-height: 3rem;
-        font-weight: 300;
-        letter-spacing: -.1px;
-        text-align: justify;
-
-        @media (max-width: $mobile-width) {
-            margin-top: calc(38.08 / 1020 * 100vw);
-        }
-    }
+  }
 }
 
 .people {
-    margin-top: 44px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    margin-top: calc(38.08 / 1020 * 100vw);
+    flex-direction: column;
+  }
+
+  &__item {
+    width: 300px;
+
+    &:nth-child(2) .people__image {
+      margin-left: -1px;
+    }
+
+    &:first-child .people__icons {
+      margin-left: 1px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: calc(100% / 3 - 15px);
+    }
 
     @media (max-width: $mobile-width) {
+      margin-top: calc(92.48 / 1020 * 100vw);
+      width: 100%;
+    }
+
+    &:first-child {
+      @media (max-width: $mobile-width) {
         margin-top: calc(38.08 / 1020 * 100vw);
-        flex-direction: column;
+      }
+    }
+  }
+
+  &__image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+    @media (max-width: $tablet-width) {
+      width: auto;
+      height: auto;
     }
 
-    &__item {
-        width: 300px;
+    & img {
+      @media (max-width: $tablet-width) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 
-        &:nth-child(2) .people__image {
-            margin-left: -1px;
-        }
+  &__title {
+    margin-top: 17px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 900;
+    color: $text-color2;
+    letter-spacing: -0.25px;
 
-        &:first-child .people__icons {
-            margin-left: 1px;
-        }
+    @media (max-width: $mobile-width) {
+      margin-top: calc(48.96 / 1020 * 100vw);
+    }
+  }
 
-        @media (max-width: $tablet-width) {
-			width: calc(100% / 3 - 15px);
-        }
-        
-        @media (max-width: $mobile-width) {
-            margin-top: calc(92.48 / 1020 * 100vw);
-            width: 100%;
-        }
+  &__text {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    line-height: 2.156rem;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    text-align: justify;
 
-        &:first-child {
-            @media (max-width: $mobile-width) {
-                margin-top: calc(38.08 / 1020 * 100vw);
-            }
-        }
+    @media (max-width: $tablet-width) {
+      min-height: 72px;
     }
 
-    &__image {
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        
-        @media (max-width: $tablet-width) {
-            width: auto;
-            height: auto;
-		}
-        
-        & img {
-            @media (max-width: $tablet-width) {
-                max-width: 100%;
-                height: auto;
-            }
-        }
+    @media (max-width: $mobile-width) {
+      margin-top: calc(13.6 / 1020 * 100vw);
+      min-height: calc(127.48 / 1020 * 100vw);
+    }
+  }
+
+  &__icons {
+    margin-top: 22px;
+    display: flex;
+    height: 32px;
+
+    @media (max-width: $mobile-width) {
+      margin-top: calc(24.48 / 1020 * 100vw);
+    }
+  }
+
+  &__social-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    &__title {
-        margin-top: 17px;
-        font-size: 1.8rem;
-        line-height: 1.8rem;
-        font-weight: 900;
-        color: $text-color2;
-        letter-spacing: -.25px;
-
-        @media (max-width: $mobile-width) {
-            margin-top: calc(48.96 / 1020 * 100vw);
-        }
+    &--facebook {
+      background: url("./assets/img/portfolio/icon_facebook.png");
     }
 
-    &__text {
-        margin-top: 12px;
-        font-size: 1.2rem;
-        line-height: 2.156rem;
-        font-weight: 400;
-        letter-spacing: -.14px;
-        text-align: justify;
-
-        @media (max-width: $tablet-width) {
-            min-height: 72px;
-        }
-
-        @media (max-width: $mobile-width) {
-            margin-top: calc(13.6 / 1020 * 100vw);
-            min-height: calc(127.48 / 1020 * 100vw);
-        }
+    &--google {
+      background: url("./assets/img/portfolio/icon_google.png");
     }
 
-    &__icons {
-        margin-top: 22px;
-        display: flex;
-        height: 32px;
-
-        @media (max-width: $mobile-width) {
-            margin-top: calc(24.48 / 1020 * 100vw);
-        }
+    &--twitter {
+      background: url("./assets/img/portfolio/icon_twitter.png");
     }
 
-    &__social-icon {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        &--facebook {
-            background: url('./assets/img/portfolio/icon_facebook.png');
-        }
-
-        &--google {
-            background: url('./assets/img/portfolio/icon_google.png');
-        }
-
-        &--twitter {
-            background: url('./assets/img/portfolio/icon_twitter.png');
-        }
-
-        &--linkedin {
-            background: url('./assets/img/portfolio/icon_linkedin.png');
-        }
+    &--linkedin {
+      background: url("./assets/img/portfolio/icon_linkedin.png");
     }
+  }
 
-    &__link {
-        margin-right: 8px;
+  &__link {
+    margin-right: 8px;
 
-        &:last-child {
-            margin-right: 0;
-        }
+    &:last-child {
+      margin-right: 0;
     }
+  }
 }

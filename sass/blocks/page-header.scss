@@ -1,196 +1,199 @@
 .header {
-	position: fixed;
-	top: 0;
-	margin-bottom: 6px;
-	width: inherit;
-	min-height: 89px;
-	background-color: $main-background;
-	box-shadow: 0px 6px 0px #323746;
-	z-index: 999;
+  position: fixed;
+  top: 0;
+  margin-bottom: 6px;
+  width: inherit;
+  min-height: 89px;
+  background-color: $main-background;
+  box-shadow: 0px 6px 0px #323746;
+  z-index: 999;
 
-	@media (max-width: $mobile-width) {
-		min-height: 71px;
-	}
-	
-	&--scroll {
-		min-height: 40px;
-	}
+  @media (max-width: $mobile-width) {
+    min-height: 71px;
+  }
 
-	&  .wrapper {
-		position: relative;
-		min-height: inherit;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+  &--scroll {
+    min-height: 40px;
+  }
 
-		@media (max-width: $tablet-width) {
-			width: calc(100% - 80px);
-		}
+  & .wrapper {
+    position: relative;
+    min-height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-		@media (max-width: $mobile-width) {
-			width: calc(100% - 40px);
-		}
-	}
+    @media (max-width: $tablet-width) {
+      width: calc(100% - 80px);
+    }
 
-	&__burger {
-		display: none;
+    @media (max-width: $mobile-width) {
+      width: calc(100% - 40px);
+    }
+  }
 
-		@media (max-width: $mobile-width) {
-			display: block;
-			position: absolute;
-			top: 25.5px;
-			left: 0;
-			width: 25px;
-			height: 20px;
-			transition: transform 0.5s;
-			cursor: pointer;
-			z-index: 500;
-		}
+  &__burger {
+    display: none;
 
-		&::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 25px;
-			height: 2.4px;
-			border-radius: 5px;
-			background-color: #fff;
-			box-shadow: 0 8.8px 0 0 #fff, 0 17.6px 0 0 #fff;
-		}
+    @media (max-width: $mobile-width) {
+      display: block;
+      position: absolute;
+      top: 25.5px;
+      left: 0;
+      width: 25px;
+      height: 20px;
+      transition: transform 0.5s;
+      cursor: pointer;
+      z-index: 500;
+    }
 
-		&--rotate {
-			transform: rotate(90deg);
-		}
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 2.4px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 8.8px 0 0 #fff, 0 17.6px 0 0 #fff;
+    }
 
-		&--onScroll {
-			top: 10px;
-		}
+    &--rotate {
+      transform: rotate(90deg);
+    }
 
-		&--afterLinkClick {
-			top: 25.5px;
-		}
-	}
+    &--onScroll {
+      top: 10px;
+    }
 
-	&__logo {
-		position: relative;
-		font-size: 2.5rem;
-		font-weight: bold;
-		color: #fff;
-		text-transform: uppercase;
+    &--afterLinkClick {
+      top: 25.5px;
+    }
+  }
 
-		&::after {
-			content: '*';
-			position: absolute;
-			top: 0;
-			right: -10px;
-			color: $pink-background;
-		}
+  &__logo {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
 
-		@media (max-width: $mobile-width) {
-			font-size: 1.969rem;
-			line-height: 2.4rem;
-			letter-spacing: -.03em;
-		}
-	}
+    &::after {
+      content: "*";
+      position: absolute;
+      top: 0;
+      right: -10px;
+      color: $pink-background;
+    }
 
-	&__link {
-		@media (max-width: $mobile-width) {
-			display: block;
-			margin: 0 auto;
-		}
+    @media (max-width: $mobile-width) {
+      font-size: 1.969rem;
+      line-height: 2.4rem;
+      letter-spacing: -0.03em;
+    }
+  }
 
-		&--left-slide {
-			margin: 0;
-			left: 68.5px;
-			position: fixed;
-			z-index: 998;
-		}
+  &__link {
+    @media (max-width: $mobile-width) {
+      display: block;
+      margin: 0 auto;
+    }
 
-		&--onScroll {
-			top: 25px;
-		}
-	}
+    &--left-slide {
+      margin: 0;
+      left: 68.5px;
+      position: fixed;
+      z-index: 998;
+    }
+
+    &--onScroll {
+      top: 25px;
+    }
+  }
 }
 
 .navigation {
-	margin-top: 6px;
-	display: flex;
+  margin-top: 6px;
+  display: flex;
 
-	@media (max-width: $mobile-width) {
-		display: none;
-	}
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 
-	&--left-slide {
-		@media (max-width: $mobile-width) {
-			position: fixed;
-			top: 0;
-			left: 0;
-			margin: 0;
-			padding-top: 232px;
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			height: 100vh;
-			background: linear-gradient(to right, $main-background 0%, $main-background 74.13%,#0008 74.13%,#0008 100%);
-			transition: left 0.5s;
-		}
-	}
+  &--left-slide {
+    @media (max-width: $mobile-width) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding-top: 232px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(
+        to right,
+        $main-background 0%,
+        $main-background 74.13%,
+        #0008 74.13%,
+        #0008 100%
+      );
+      transition: left 0.5s;
+    }
+  }
 
-	&__item {
-		margin-left: 28px;
-		line-height: 0;
+  &__item {
+    margin-left: 28px;
+    line-height: 0;
 
-		&:first-child {
-			margin-left: 0;
+    &:first-child {
+      margin-left: 0;
 
-			@media (max-width: $mobile-width) {
-				margin-left: 71px;
-			}
-	
-		}
+      @media (max-width: $mobile-width) {
+        margin-left: 71px;
+      }
+    }
 
-		&:nth-child(n+2)::before {
-			content: '';
-			position: absolute;
-			margin-left: -16px;
-			width: 2px;
-			height: 2px;
-			border-radius: 50%;
-			background-color: #fff;
+    &:nth-child(n + 2)::before {
+      content: "";
+      position: absolute;
+      margin-left: -16px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background-color: #fff;
 
-			@media (max-width: $mobile-width) {
-				display: none;
-			}
-		}
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+    }
 
-		@media (max-width: $mobile-width) {
-			margin: 0;
-			margin-left: 71px;
-			margin-bottom: 27px;
-		}
+    @media (max-width: $mobile-width) {
+      margin: 0;
+      margin-left: 71px;
+      margin-bottom: 27px;
+    }
+  }
 
-	}
+  &__link {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
 
-	&__link {
-		font-size: 1.2rem;
-		color: #fff;
-		font-weight: bold;
-		text-transform: uppercase;
+    &:hover {
+      color: $pink-background;
+    }
 
-		&:hover {
-			color: $pink-background;
-		}
+    &--current {
+      color: $pink-background;
+    }
 
-		&--current {
-			color: $pink-background;
-		}
-
-		@media (max-width: $mobile-width) {
-			font-size: 2.4rem;
-			line-height: 2.9rem;
-			letter-spacing: -0.035em;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      letter-spacing: -0.035em;
+    }
+  }
 }
-

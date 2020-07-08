@@ -1,265 +1,304 @@
 ﻿<!DOCTYPE html>
 <html lang="en" id="home-block">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Singolo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Singolo</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__burger"></div>
-            <a class="header__link" href="#"><h1 class="header__logo">Singolo</h1></a>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#home-block">Home</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#services-block">Services</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#portfolio-block">Portfolio</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#about-block">About</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#contact-block">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="slider">
-            <div class="wrapper">
-                <div class="slider__images">
-                    <img src="./assets/img/slider-phone-vertical.png" alt="phone-vertical" class="slider__image slider__image--phone-vertical">
-                    <img src="./assets/img/slider-phone-horizontal.png" alt="phone-horizontal"  class="slider__image slider__image--phone-horizontal">
-                    <img src="./assets/img/phone-image-vertical.png" alt="phone-image-vertical" class="slider__image slider__phone-background slider__phone-background--vertical">
-                    <img src="./assets/img/phone-image-horizontal.png" alt="phone-image-horizontal" class="slider__image slider__phone-background slider__phone-background--horizontal">
-                </div>
-
-                <div class="slider__images">
-                    <img src="./assets/img/slide2.png" alt="slide2" class="slider__image2">
-                </div>
-
-                <button class="slider__button slider__button--left"></button>
-                <button class="slider__button slider__button--right"></button>
-            </div> 
-        </section>
-
-        <section class="services" id="services-block">
-            <div class="wrapper">
-                <h1 class="services__title">Our Services</h1>
-                <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="layout-3-columns">
-                    <div class="service">
-                        <div class="service__icon">
-                            <span class="icon-square icon-square--pensil"></span>
-                        </div>
-                        <div class="service__wrapper">
-                            <h3 class="service__title">Custom Design</h3>
-                            <p class="service__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service__icon">
-                            <span class="icon-square icon-square--lamp"></span>
-                        </div>
-                        <div class="service__wrapper">
-                            <h3 class="service__title">Inovative Ideas</h3>
-                            <p class="service__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service__icon">
-                            <span class="icon-square icon-square--heart"></span>
-                        </div>
-                        <div class="service__wrapper">
-                            <h3 class="service__title">Love Is The Answer</h3>
-                            <p class="service__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service__icon">
-                            <span class="icon-square icon-square--device"></span>
-                        </div>
-                        <div class="service__wrapper">
-                            <h3 class="service__title">Responsive Layout</h3>
-                            <p class="service__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service__icon">
-                            <span class="icon-square icon-square--idea"></span>
-                        </div>
-                        <div class="service__wrapper">
-                            <h3 class="service__title">24 / 7 Support</h3>
-                            <p class="service__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
-                        </div>
-                    </div>
-
-                    <div class="service">
-                        <div class="service__icon">
-                            <span class="icon-square icon-square--star"></span>
-                        </div>
-                        <div class="service__wrapper">
-                            <h3 class="service__title">Feel Like A Star</h3>
-                            <p class="service__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="portfolio" id="portfolio-block">
-            <div class="wrapper">
-                <h1 class="portfolio__title">Portfolio</h1>
-                <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <nav class="portfolio__buttons">
-                    <button class="portfolio__button portfolio__button--current">All</button>
-                    <button class="portfolio__button">Web Design</button>
-                    <button class="portfolio__button">Graphic Design</button>
-                    <button class="portfolio__button">Artwork</button>
-                </nav>
-                    <ul class="gallery">
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_1.png" alt="gallery_image_1">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_2.png" alt="gallery_image_2">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_3.png" alt="gallery_image_3">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_4.png" alt="gallery_image_4">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_5.png" alt="gallery_image_5">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_6.png" alt="gallery_image_6">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_7.png" alt="gallery_image_7">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_8.png" alt="gallery_image_8">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_9.png" alt="gallery_image_9">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_10.png" alt="gallery_image_10">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_11.png" alt="gallery_image_11">
-                        </li>
-                        <li class="gallery__item">
-                            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_12.png" alt="gallery_image_12">
-                        </li>
-                    </ul>
-            </div>
-        </section>
-    
-        <section class="about-us" id="about-block">
-            <div class="wrapper">
-                <h1 class="about-us__title">About Us</h1>
-                <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="people">
-                    <div class="people__item">
-                        <div class="people__image"><img src="./assets/img/portfolio/image_face_1.png" alt="face_1"></div>
-                        <h3 class="people__title">Adam Jensen</h3>
-                        <p class="people__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                        <div class="people__icons">
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--facebook"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--google"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--twitter"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--linkedin"></span></a>
-                        </div>
-                    </div>
-    
-                    <div class="people__item">
-                        <div class="people__image"><img src="./assets/img/portfolio/image_face_2.png" alt="face_2"></div>
-                        <h3 class="people__title">Desmond Miles</h3>
-                        <p class="people__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        <div class="people__icons">
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--facebook"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--google"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--twitter"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--linkedin"></span></a>
-                        </div>
-                    </div>
-    
-                    <div class="people__item">
-                        <div class="people__image"><img src="./assets/img/portfolio/image_face_3.png" alt="face_3"></div>
-                        <h3 class="people__title">Scolara Visari</h3>
-                        <p class="people__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                        <div class="people__icons">
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--facebook"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--google"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--twitter"></span></a>
-                            <a class="people__link" href="#"><span class="people__social-icon people__social-icon--linkedin"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="quote" id="contact-block">
-            <div class="wrapper">
-                <h1 class="quote__title">Get a Quote</h1>
-                <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="layout-2-columns">
-                    <form class="form-quote" action method="POST">
-                        <input id="name" class="form-quote__item" type="text" name="name"  placeholder="Name (Required)" required>
-                        <input id="email" class="form-quote__item" type="email" name="email" placeholder="Email (Required)" required>
-                        <input id="subject" class="form-quote__item" type="text" name="text" placeholder="Subject">
-                        <textarea id="description" class="form-quote__item form-quote__textarea" name="textarea" cols="60" rows="15" placeholder="Describe your project in detail..."></textarea>
-                        <button class="form-quote__item form-quote__button" type="submit">Submit</button>
-                    </form>
-    
-                    <div class="information">
-                        <h3 class="information__title">Contact Information</h3>
-                        <p class="information__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                        <ul class="information-list">
-                            <li class="information-list__item">
-                                <a href="#" class="information-list__link information-list__link--location">Elm St. 14/05 Lost City</a>
-                            </li>
-                            <li class="information-list__item">
-                                <a href="tel:035283318635" class="information-list__link information-list__link--phone">03528 331 86 35</a>
-                            </li>
-                            <li class="information-list__item">
-                                <a href="mailto:info@singolo.com" class="information-list__link information-list__link--mail">info@singolo.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="wrapper">
-            <span class="footer__text">© Copyright 2013</span>
-    
-            <div class="footer__icons">
-                <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--facebook"></span></a>
-                <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--google"></span></a>
-                <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--twitter"></span></a>
-                <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--linkedin"></span></a>
-            </div>
-        </div>
-    </footer>
-
-    <div class="modal hidden">
-        <div class="message">
-            <h3 class="message__title">Письмо отправлено</h3>
-            <p id="modal-theme" class="message__text"></p>
-            <p id="modal-text" class="message__text"></p>
-            <button class="message__button">ОК</button>
-        </div>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__burger"></div>
+      <a class="header__link" href="#">
+        <h1 class="header__logo">Singolo</h1>
+      </a>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#home-block">Home</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#services-block">Services</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#portfolio-block">Portfolio</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#about-block">About</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#contact-block">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <script src="script.js"></script> 
+  </header>
+
+  <main>
+    <section class="slider">
+      <div class="wrapper">
+        <div class="slider__images">
+          <img src="./assets/img/slider-phone-vertical.png" alt="phone-vertical"
+            class="slider__image slider__image--phone-vertical">
+          <img src="./assets/img/slider-phone-horizontal.png" alt="phone-horizontal"
+            class="slider__image slider__image--phone-horizontal">
+          <img src="./assets/img/phone-image-vertical.png" alt="phone-image-vertical"
+            class="slider__image slider__phone-background slider__phone-background--vertical">
+          <img src="./assets/img/phone-image-horizontal.png" alt="phone-image-horizontal"
+            class="slider__image slider__phone-background slider__phone-background--horizontal">
+        </div>
+
+        <div class="slider__images">
+          <img src="./assets/img/slide2.png" alt="slide2" class="slider__image2">
+        </div>
+
+        <button class="slider__button slider__button--left"></button>
+        <button class="slider__button slider__button--right"></button>
+      </div>
+    </section>
+
+    <section class="services" id="services-block">
+      <div class="wrapper">
+        <h1 class="services__title">Our Services</h1>
+        <p class="services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <div class="layout-3-columns">
+          <div class="service">
+            <div class="service__icon">
+              <span class="icon-square icon-square--pensil"></span>
+            </div>
+            <div class="service__wrapper">
+              <h3 class="service__title">Custom Design</h3>
+              <p class="service__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra
+                lacus ut, ultrices velit.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service__icon">
+              <span class="icon-square icon-square--lamp"></span>
+            </div>
+            <div class="service__wrapper">
+              <h3 class="service__title">Inovative Ideas</h3>
+              <p class="service__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
+                tellus dolor id lorem.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service__icon">
+              <span class="icon-square icon-square--heart"></span>
+            </div>
+            <div class="service__wrapper">
+              <h3 class="service__title">Love Is The Answer</h3>
+              <p class="service__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
+                felis. Quisque condimentum.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service__icon">
+              <span class="icon-square icon-square--device"></span>
+            </div>
+            <div class="service__wrapper">
+              <h3 class="service__title">Responsive Layout</h3>
+              <p class="service__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+                Praesent elit leo.</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service__icon">
+              <span class="icon-square icon-square--idea"></span>
+            </div>
+            <div class="service__wrapper">
+              <h3 class="service__title">24 / 7 Support</h3>
+              <p class="service__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+                Pellentesque egestas venenatis lorem .</p>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service__icon">
+              <span class="icon-square icon-square--star"></span>
+            </div>
+            <div class="service__wrapper">
+              <h3 class="service__title">Feel Like A Star</h3>
+              <p class="service__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae
+                aliquam tellus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio-block">
+      <div class="wrapper">
+        <h1 class="portfolio__title">Portfolio</h1>
+        <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
+          sem nec elit.</p>
+        <nav class="portfolio__buttons">
+          <button class="portfolio__button portfolio__button--current">All</button>
+          <button class="portfolio__button">Web Design</button>
+          <button class="portfolio__button">Graphic Design</button>
+          <button class="portfolio__button">Artwork</button>
+        </nav>
+        <ul class="gallery">
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_1.png" alt="gallery_image_1">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_2.png" alt="gallery_image_2">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_3.png" alt="gallery_image_3">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_4.png" alt="gallery_image_4">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_5.png" alt="gallery_image_5">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_6.png" alt="gallery_image_6">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_7.png" alt="gallery_image_7">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_8.png" alt="gallery_image_8">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_9.png" alt="gallery_image_9">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_10.png" alt="gallery_image_10">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_11.png" alt="gallery_image_11">
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="./assets/img/portfolio/gallery_image_12.png" alt="gallery_image_12">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-us" id="about-block">
+      <div class="wrapper">
+        <h1 class="about-us__title">About Us</h1>
+        <p class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <div class="people">
+          <div class="people__item">
+            <div class="people__image"><img src="./assets/img/portfolio/image_face_1.png" alt="face_1"></div>
+            <h3 class="people__title">Adam Jensen</h3>
+            <p class="people__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
+              tellus dolor id lorem.</p>
+            <div class="people__icons">
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--facebook"></span></a>
+              <a class="people__link" href="#"><span class="people__social-icon people__social-icon--google"></span></a>
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--twitter"></span></a>
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--linkedin"></span></a>
+            </div>
+          </div>
+
+          <div class="people__item">
+            <div class="people__image"><img src="./assets/img/portfolio/image_face_2.png" alt="face_2"></div>
+            <h3 class="people__title">Desmond Miles</h3>
+            <p class="people__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra
+              lacus ut, ultrices velit.</p>
+            <div class="people__icons">
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--facebook"></span></a>
+              <a class="people__link" href="#"><span class="people__social-icon people__social-icon--google"></span></a>
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--twitter"></span></a>
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--linkedin"></span></a>
+            </div>
+          </div>
+
+          <div class="people__item">
+            <div class="people__image"><img src="./assets/img/portfolio/image_face_3.png" alt="face_3"></div>
+            <h3 class="people__title">Scolara Visari</h3>
+            <p class="people__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
+              felis. Quisque condimentum.</p>
+            <div class="people__icons">
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--facebook"></span></a>
+              <a class="people__link" href="#"><span class="people__social-icon people__social-icon--google"></span></a>
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--twitter"></span></a>
+              <a class="people__link" href="#"><span
+                  class="people__social-icon people__social-icon--linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote" id="contact-block">
+      <div class="wrapper">
+        <h1 class="quote__title">Get a Quote</h1>
+        <p class="quote__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
+          commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+          commodo, tortor mauris condimentum nibh.</p>
+        <div class="layout-2-columns">
+          <form class="form-quote" action method="POST">
+            <input id="name" class="form-quote__item" type="text" name="name" placeholder="Name (Required)" required>
+            <input id="email" class="form-quote__item" type="email" name="email" placeholder="Email (Required)"
+              required>
+            <input id="subject" class="form-quote__item" type="text" name="text" placeholder="Subject">
+            <textarea id="description" class="form-quote__item form-quote__textarea" name="textarea" cols="60" rows="15"
+              placeholder="Describe your project in detail..."></textarea>
+            <button class="form-quote__item form-quote__button" type="submit">Submit</button>
+          </form>
+
+          <div class="information">
+            <h3 class="information__title">Contact Information</h3>
+            <p class="information__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae
+              aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+              turpis, et consequat felis.</p>
+            <ul class="information-list">
+              <li class="information-list__item">
+                <a href="#" class="information-list__link information-list__link--location">Elm St. 14/05 Lost City</a>
+              </li>
+              <li class="information-list__item">
+                <a href="tel:035283318635" class="information-list__link information-list__link--phone">03528 331 86
+                  35</a>
+              </li>
+              <li class="information-list__item">
+                <a href="mailto:info@singolo.com"
+                  class="information-list__link information-list__link--mail">info@singolo.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <span class="footer__text">© Copyright 2013</span>
+
+      <div class="footer__icons">
+        <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--facebook"></span></a>
+        <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--google"></span></a>
+        <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--twitter"></span></a>
+        <a class="footer__link" href="#"><span class="footer__social-icon footer__social-icon--linkedin"></span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal hidden">
+    <div class="message">
+      <h3 class="message__title">Письмо отправлено</h3>
+      <p id="modal-theme" class="message__text"></p>
+      <p id="modal-text" class="message__text"></p>
+      <button class="message__button">ОК</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,169 +1,169 @@
 .slider {
-	margin-top: 95px;
-	margin-bottom: 6px;
-	min-height: 594px;
-	background: $pink-background;
-	box-shadow: 0px 6px 0px #ea676b;
+  margin-top: 95px;
+  margin-bottom: 6px;
+  min-height: 594px;
+  background: $pink-background;
+  box-shadow: 0px 6px 0px #ea676b;
 
-	@media (max-width: $tablet-width) {
-		min-height: calc(594 / 1020 * 100vw)
-	}
+  @media (max-width: $tablet-width) {
+    min-height: calc(594 / 1020 * 100vw);
+  }
 
-	@media (max-width: $mobile-width) {
-		margin-top: 77px;
-	}
+  @media (max-width: $mobile-width) {
+    margin-top: 77px;
+  }
 
-	&--slide-background {
-		background: #648bf0;
-		box-shadow: 0px 6px 0px #647bf0;
-	}
+  &--slide-background {
+    background: #648bf0;
+    box-shadow: 0px 6px 0px #647bf0;
+  }
 
-	& .wrapper {
-		position: relative;
-		min-height: inherit;
+  & .wrapper {
+    position: relative;
+    min-height: inherit;
 
-		@media (max-width: $tablet-width) {
-			width: calc(100% - 53.72px);
-		}
+    @media (max-width: $tablet-width) {
+      width: calc(100% - 53.72px);
+    }
 
-		@media (max-width: $mobile-width) {
-			width: calc(100% - 20px);
-		}
-	}
+    @media (max-width: $mobile-width) {
+      width: calc(100% - 20px);
+    }
+  }
 
-	&__images {
-		position: relative;
-		min-height: inherit;
+  &__images {
+    position: relative;
+    min-height: inherit;
 
-		animation-name: fade;
-		animation-duration: 1.5s;
-	}
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
-	&__image {
-		position: absolute;
+  &__image {
+    position: absolute;
 
-		&--phone-vertical {
-			top: 53px;
-			left: 72px;
+    &--phone-vertical {
+      top: 53px;
+      left: 72px;
 
-			@media (max-width: $tablet-width) {
-				top: calc(53 / 1020 * 100vw);
-				left: calc(72 / 1020 * 100vw);
-				width: calc(240 / 1020 * 100%);
-			}
+      @media (max-width: $tablet-width) {
+        top: calc(53 / 1020 * 100vw);
+        left: calc(72 / 1020 * 100vw);
+        width: calc(240 / 1020 * 100%);
+      }
 
-			@media (max-width: $mobile-width) {
-				top: calc(54.4 / 1020 * 100vw);
-				left: calc(81.6 / 1020 * 100vw);
-			}
-		}
+      @media (max-width: $mobile-width) {
+        top: calc(54.4 / 1020 * 100vw);
+        left: calc(81.6 / 1020 * 100vw);
+      }
+    }
 
-		&--phone-horizontal {
-			top: 175px;
-			right: 72px;
+    &--phone-horizontal {
+      top: 175px;
+      right: 72px;
 
-			@media (max-width: $tablet-width) {
-				top: calc(175 / 1020 * 100vw);
-				right: calc(72 / 1020 * 100vw);
-				width: calc(483 / 1020 * 100%)
-			}
+      @media (max-width: $tablet-width) {
+        top: calc(175 / 1020 * 100vw);
+        right: calc(72 / 1020 * 100vw);
+        width: calc(483 / 1020 * 100%);
+      }
 
-			@media (max-width: $mobile-width) {
-				top: calc(176.8 / 1020 * 100vw);
-				right: calc(81.6 / 1020 * 100vw);
-			}
-		}
+      @media (max-width: $mobile-width) {
+        top: calc(176.8 / 1020 * 100vw);
+        right: calc(81.6 / 1020 * 100vw);
+      }
+    }
 
-		&--hidden {
-			display: none;
-		}
-	}
+    &--hidden {
+      display: none;
+    }
+  }
 
-	&__image2 {
-		position: absolute;
-		top: 40.5px;
-		left: 211.5px;
-		
-		@media (max-width: $tablet-width) {
-			top: calc(40.5 / 1020 * 100vw);
-			left: calc(211.5 / 1020 * 100vw);
-			width: calc(517 / 1020 * 100%);
-		}
-	}
+  &__image2 {
+    position: absolute;
+    top: 40.5px;
+    left: 211.5px;
 
-	&__phone-background {
-		z-index: 10;
+    @media (max-width: $tablet-width) {
+      top: calc(40.5 / 1020 * 100vw);
+      left: calc(211.5 / 1020 * 100vw);
+      width: calc(517 / 1020 * 100%);
+    }
+  }
 
-		&--vertical {
-			top: 118px;
-			left: 86px;
+  &__phone-background {
+    z-index: 10;
 
-			@media (max-width: $tablet-width) {
-				top: calc(112 / 1020 * 100vw);
-				left: calc(86 / 1020 * 100vw);
-				width: calc(188 / 1020 * 100%)
-			}
+    &--vertical {
+      top: 118px;
+      left: 86px;
 
-			@media (max-width: $mobile-width) {
-				top: calc(117 / 1020 * 100vw);
-				left: calc(96 / 1020 * 100vw);
-			}
-		}
+      @media (max-width: $tablet-width) {
+        top: calc(112 / 1020 * 100vw);
+        left: calc(86 / 1020 * 100vw);
+        width: calc(188 / 1020 * 100%);
+      }
 
-		&--horizontal {
-			top: 188px;
-			right: 162px;
+      @media (max-width: $mobile-width) {
+        top: calc(117 / 1020 * 100vw);
+        left: calc(96 / 1020 * 100vw);
+      }
+    }
 
-			@media (max-width: $tablet-width) {
-				top: calc(187 / 1020 * 100vw);
-				right: calc(154 / 1020 * 100vw);
-				width: calc(333 / 1020 * 100%);
-			}
+    &--horizontal {
+      top: 188px;
+      right: 162px;
 
-			@media (max-width: $mobile-width) {
-				top: calc(188 / 1020 * 100vw);
-				right: calc(167 / 1020 * 100vw);
-			}
-		}
-	}
+      @media (max-width: $tablet-width) {
+        top: calc(187 / 1020 * 100vw);
+        right: calc(154 / 1020 * 100vw);
+        width: calc(333 / 1020 * 100%);
+      }
 
-	&__button {
-		position: absolute;
-		top: 280px;
-		width: 16px;
-		height: 27px;
-		background: url('./assets/img/slider-arrow.png') no-repeat;
-		background-size: cover;
-		cursor: pointer;
-		border: none;
-		outline: none;
+      @media (max-width: $mobile-width) {
+        top: calc(188 / 1020 * 100vw);
+        right: calc(167 / 1020 * 100vw);
+      }
+    }
+  }
 
-		@media (max-width: $tablet-width) {
-			top: calc(280 / 1020 * 100vw);
-		}
+  &__button {
+    position: absolute;
+    top: 280px;
+    width: 16px;
+    height: 27px;
+    background: url("./assets/img/slider-arrow.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: none;
+    outline: none;
 
-		@media (max-width: $mobile-width) {
-			top: calc(267.8 / 1020 * 100vw);
-			width: calc(38.08 / 1020 * 100vw);
-			height: calc(73.44 / 1020 * 100vw);
-		}
+    @media (max-width: $tablet-width) {
+      top: calc(280 / 1020 * 100vw);
+    }
 
-		&--left {
-			left: 2px;
-		}
+    @media (max-width: $mobile-width) {
+      top: calc(267.8 / 1020 * 100vw);
+      width: calc(38.08 / 1020 * 100vw);
+      height: calc(73.44 / 1020 * 100vw);
+    }
 
-		&--right {
-			right: 0;
-			transform: rotate(-180deg);
-		}
-	}
+    &--left {
+      left: 2px;
+    }
+
+    &--right {
+      right: 0;
+      transform: rotate(-180deg);
+    }
+  }
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

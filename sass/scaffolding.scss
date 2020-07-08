@@ -1,45 +1,45 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-	font-size: 10px;
-	scroll-behavior: smooth;
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
-	position: relative;
-    width: 1020px;
-	margin: 0 auto;
+  position: relative;
+  width: 1020px;
+  margin: 0 auto;
 
-	font-size: 1.8rem;
-	font-family: 'Lato', Arial, sans-serif;
-	color: $text-color;
+  font-size: 1.8rem;
+  font-family: "Lato", Arial, sans-serif;
+  color: $text-color;
 
-	@media (max-width: $tablet-width) {
-		width: 100%;
-	}
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 .wrapper {
-	margin: 0 auto;
-	width: 940px;
+  margin: 0 auto;
+  width: 940px;
 
-	@media (max-width: $tablet-width) {
-		width: calc(100% - 80px);
-	}
+  @media (max-width: $tablet-width) {
+    width: calc(100% - 80px);
+  }
 }

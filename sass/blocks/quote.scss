@@ -1,115 +1,115 @@
 .quote {
-	margin-bottom: 6px;
-	min-height: 648px;
-	background-color: $pink-background;
-	box-shadow: 0px 6px 0px #ea676b;
+  margin-bottom: 6px;
+  min-height: 648px;
+  background-color: $pink-background;
+  box-shadow: 0px 6px 0px #ea676b;
 
-	@media (max-width: $tablet-width) {
-		min-height: 625px;
-	}
+  @media (max-width: $tablet-width) {
+    min-height: 625px;
+  }
 
-	@media (max-width: $mobile-width) {
-		min-height: 969px;
-	}
+  @media (max-width: $mobile-width) {
+    min-height: 969px;
+  }
 
-	&__title {
-		padding-top: 68px;
-		font-size: 3rem;
-		line-height: 1.786rem;
-		font-weight: 900;
-		color: $quote-text-color;
-		letter-spacing: -.1px;
+  &__title {
+    padding-top: 68px;
+    font-size: 3rem;
+    line-height: 1.786rem;
+    font-weight: 900;
+    color: $quote-text-color;
+    letter-spacing: -0.1px;
 
-		@media (max-width: $mobile-width) {
-			padding-top: calc(119.68 / 1020 * 100vw);
-		}
-	}
+    @media (max-width: $mobile-width) {
+      padding-top: calc(119.68 / 1020 * 100vw);
+    }
+  }
 
-	&__text {
-		margin-top: 28px;
-		font-weight: 300;
-		line-height: 3rem;
-		color: $quote-text-color;
-		letter-spacing: -.21px;
-		text-align: justify;
+  &__text {
+    margin-top: 28px;
+    font-weight: 300;
+    line-height: 3rem;
+    color: $quote-text-color;
+    letter-spacing: -0.21px;
+    text-align: justify;
 
-		@media (max-width: $mobile-width) {
-			margin-top: calc(38.08 / 1020 * 100vw);
-		}
-	}
+    @media (max-width: $mobile-width) {
+      margin-top: calc(38.08 / 1020 * 100vw);
+    }
+  }
 }
 
 .layout-2-columns {
-	margin-top: 44px;
-	display: flex;
-	justify-content: space-between;
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
 
-	@media (max-width: $mobile-width) {
-		margin-top: calc(51.68 / 1020 * 100vw);
-		flex-direction: column;
-	}
+  @media (max-width: $mobile-width) {
+    margin-top: calc(51.68 / 1020 * 100vw);
+    flex-direction: column;
+  }
 }
 
 .form-quote {
-	width: calc(619 / 940 * 100%);
-	display: flex;
-	flex-direction: column;
+  width: calc(619 / 940 * 100%);
+  display: flex;
+  flex-direction: column;
 
-	@media (max-width: $mobile-width) {
-		width: 100%;
-	}
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 
-	&__item {
-		color: $quote-main-color;
-		margin-bottom: 16px;
-		background-color: #d6564f;
-		border-radius: 5px;
-		border: none;
-		outline: none;
-		overflow: hidden;
+  &__item {
+    color: $quote-main-color;
+    margin-bottom: 16px;
+    background-color: #d6564f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
+    &:last-child {
+      margin-bottom: 0;
+    }
 
-		&[placeholder] {
-			font-family: 'Lato';
-			padding: 13px 15px 11px 15px;
-			font-size: 1.2rem;
-			line-height: 1.2rem;
-			font-weight: 400;
-		}
+    &[placeholder] {
+      font-family: "Lato";
+      padding: 13px 15px 11px 15px;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      font-weight: 400;
+    }
 
-		&::placeholder {
-			color: $quote-main-color;
-		}
-	}
+    &::placeholder {
+      color: $quote-main-color;
+    }
+  }
 
-	&__textarea {
-		height: 202px;
-		resize: none;
+  &__textarea {
+    height: 202px;
+    resize: none;
 
-		@media (max-width: $tablet-width) {
-			height: calc(202 / 1020 * 100vw);
-		}
+    @media (max-width: $tablet-width) {
+      height: calc(202 / 1020 * 100vw);
+    }
 
-		@media (max-width: $mobile-width) {
-			height: calc(432.48 / 1020 * 100vw);
-		}
-	}
+    @media (max-width: $mobile-width) {
+      height: calc(432.48 / 1020 * 100vw);
+    }
+  }
 
-	&__button {
-		padding: 10px 15px;
-		width: max-content;
-		color: $quote-text-color;
-		cursor: pointer;
+  &__button {
+    padding: 10px 15px;
+    width: max-content;
+    color: $quote-text-color;
+    cursor: pointer;
 
-		&:hover {
-			color: $text-color;
-		}
+    &:hover {
+      color: $text-color;
+    }
 
-		@media (max-width: $mobile-width) {
-			width: 100%;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
 }

@@ -1,137 +1,137 @@
 .portfolio {
-    margin-bottom: 6px;
-    min-height: 863px;
-    background-color: $main-background;
-    box-shadow: 0px 6px 0px #323746;
+  margin-bottom: 6px;
+  min-height: 863px;
+  background-color: $main-background;
+  box-shadow: 0px 6px 0px #323746;
 
-    @media (max-width: $tablet-width) {
-		min-height: 1096px;
-    }
-    
+  @media (max-width: $tablet-width) {
+    min-height: 1096px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 844px;
+  }
+
+  &__title {
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: 900;
+    color: $text-color2;
+
     @media (max-width: $mobile-width) {
-		min-height: 844px;
-	}
+      padding-top: 42px;
+    }
+  }
 
-    &__title {
-        padding-top: 60px;
-        font-size: 3rem;
-        font-weight: 900;
-        color: $text-color2;
+  &__text {
+    margin-top: 18px;
+    line-height: 3rem;
+    font-weight: 300;
+    letter-spacing: -0.2px;
 
-        @media (max-width: $mobile-width) {
-            padding-top: 42px;
-        }
+    @media (max-width: $mobile-width) {
+      margin-top: 14px;
+    }
+  }
+
+  &__buttons {
+    margin-top: 10px;
+    display: flex;
+
+    @media (max-width: $small-mobile-width) {
+      justify-content: space-between;
+    }
+  }
+
+  &__button {
+    margin-right: 10px;
+    padding: 0 6px;
+    font-size: 1.2rem;
+    line-height: 2.156rem;
+    font-weight: 400;
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $portfolio-hover-color;
+      color: $portfolio-hover-color;
     }
 
-    &__text {
-        margin-top: 18px;
-        line-height: 3rem;
-        font-weight: 300;
-        letter-spacing: -.2px;
-
-        @media (max-width: $mobile-width) {
-            margin-top: 14px;
-        }
+    &:last-child {
+      margin-right: 0;
     }
 
-    &__buttons {
-        margin-top: 10px;
-        display: flex;
-
-        @media (max-width: $small-mobile-width) {
-           justify-content: space-between;
-        }
+    &--current {
+      border: 1px solid $portfolio-hover-color;
+      color: $portfolio-hover-color;
     }
 
-    &__button {
-        margin-right: 10px;
-        padding: 0 6px;
-        font-size: 1.2rem;
-        line-height: 2.156rem;
-        font-weight: 400;
-        color: inherit;
-        background-color: inherit;
-        border: 1px solid $text-color;
-        border-radius: 5px;
-        outline: none;
-        cursor: pointer;
-
-        &:hover {
-            border: 1px solid $portfolio-hover-color;
-            color: $portfolio-hover-color;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        &--current {
-            border: 1px solid $portfolio-hover-color;
-            color: $portfolio-hover-color;
-        }
-
-        @media (max-width: $small-mobile-width) {
-            margin: 0;
-            padding: 0 calc(9 / 1020 * 100vw);
-            line-height: calc(70 / 1020 * 100vw)
-        }
+    @media (max-width: $small-mobile-width) {
+      margin: 0;
+      padding: 0 calc(9 / 1020 * 100vw);
+      line-height: calc(70 / 1020 * 100vw);
     }
+  }
 }
 
 .gallery {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    width: 220px;
+    max-height: 187px;
+
+    &:nth-child(n + 13) {
+      display: none;
+    }
+
+    &:nth-child(n + 9) {
+      @media (max-width: $mobile-width) {
+        display: none;
+      }
+    }
 
     @media (max-width: $tablet-width) {
-        margin-top: 28px;
+      width: calc(100% / 3 - 15px);
+      max-height: 244px;
     }
 
     @media (max-width: $mobile-width) {
-        margin-top: 25px;
+      margin-bottom: 14px;
+      width: calc(100% / 2 - 6.5px);
+      max-height: 244px;
+    }
+  }
+
+  &__image {
+    width: 220px;
+    height: 187px;
+    object-fit: none;
+
+    &--border {
+      border: 5px solid #f06c64;
     }
 
-    &__item {
-        margin-bottom: 20px;
-        width: 220px;
-        max-height: 187px;
-
-        &:nth-child(n+13) {
-            display: none;
-        }
-
-        &:nth-child(n+9) {
-            @media (max-width: $mobile-width) {
-                display: none;
-            }
-        }
-
-        @media (max-width: $tablet-width) {
-            width: calc(100% / 3 - 15px);
-            max-height: 244px;
-        }
-
-        @media (max-width: $mobile-width) {
-            margin-bottom: 14px;
-            width: calc(100% / 2 - 6.5px);
-            max-height: 244px;
-        }
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
     }
-
-    &__image {
-        width: 220px;
-        height: 187px;
-        object-fit: none;
-
-        &--border {
-            border: 5px solid #F06C64;
-        }
-
-        @media (max-width: $tablet-width) {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
-    }
+  }
 }
